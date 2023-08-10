@@ -5,9 +5,7 @@ USE employees_db;
 
 CREATE TABLE departments (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-    employee_name VARCHAR (30) NOT NULL
-    
-
+    department VARCHAR (30) NOT NULL
 
 );
 
@@ -15,6 +13,9 @@ CREATE TABLE roles (
     id INT NOT NULL, 
     title VARCHAR(30) NOT NULL, 
     salary DECIMAL
+    FOREIGN KEY (departments_id)
+    REFERENCES departments(id)
+    ON DELETE SET NULL 
    
  
 );

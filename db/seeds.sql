@@ -1,9 +1,9 @@
-INSERT INTO departments (id , employee_name, )
-VALUES  (001, 'Billing'),
-        (002, 'Store'),
-        (003, 'Desk'),
-        (004, 'Reception'),
-        (005, 'Social Media');
+INSERT INTO departments (id , department, )
+VALUES  (001, "Billing"),
+        (002, "Office"),
+        (003, "Mail"),
+        (004, "Reception"),
+        (005, "Leadership");
 
 
 INSERT INTO roles (id, title, salary)
